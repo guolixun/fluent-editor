@@ -46,11 +46,14 @@ Import style:
 Initialize the TinyEditor editor:
 
 ```javascript
-import TinyEditor from '@opentiny/fluent-editor'
+import FluentEditor from '@opentiny/fluent-editor'
 
-const editor = new TinyEditor('#editor', {
-  theme: 'snow',
-})
+
+onMounted(() => {
+	new FluentEditor("#editor", {
+		theme: "snow",
+	});
+});
 ```
 
 ## Development
